@@ -90,7 +90,7 @@ public class CoffeeMaker {
      */
     public boolean editRecipe(Recipe oldRecipe, Recipe newRecipe) {
         boolean canEditRecipe = false;
-        for (int i = 0; i < NUM_RECIPES; i++) {
+        for (int i = 0; i <= NUM_RECIPES; i++) {
             if (recipeArray[i].getName() != null) {
                 if (oldRecipe.equals(recipeArray[i])) {
                     recipeArray[i] = new Recipe();
