@@ -125,25 +125,6 @@ public class InventoryTest {
         assertEquals(4, inventory.getChocolate());
     }
 
-    // /**
-    //  * Inventory stores its quantities in static fields, so every instance
-    //  * shares the same state. Each Inventory should hold its own quantities.
-    //  */
-    // @Test
-    // public void testInstancesAreIndependent() {
-    //     Inventory other = new Inventory();
-    //     inventory.setCoffee(5);
-    //     assertEquals(15, other.getCoffee());
-    // }
-
-    // /** Constructing a new Inventory should not disturb an existing one. */
-    // @Test
-    // public void testNewInstanceDoesNotResetExistingInstance() {
-    //     inventory.setMilk(3);
-    //     new Inventory();
-    //     assertEquals(3, inventory.getMilk());
-    // }
-
     // === enoughIngredients tests === 
 
     @Test

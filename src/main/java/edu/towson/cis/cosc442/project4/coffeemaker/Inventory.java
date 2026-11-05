@@ -33,7 +33,7 @@ public class Inventory {
      * @param chocolate the new quantity of chocolate to set
      */
     public void setChocolate(int chocolate) {
-        if (chocolate >= 0) {
+        if (chocolate > -1) {
             Inventory.chocolate = chocolate;
         } else {
             Inventory.chocolate = 0;
@@ -56,7 +56,7 @@ public class Inventory {
      * @param coffee the new quantity of coffee to set
      */
     public void setCoffee(int coffee) {
-        if (coffee >= 0) {
+        if (coffee > -1) {
             Inventory.coffee = coffee;
         } else {
             Inventory.coffee = 0;
@@ -78,7 +78,7 @@ public class Inventory {
      * @param milk the new quantity of milk to set
      */
     public void setMilk(int milk) {
-        if (milk >= 0) {
+        if (milk > -1) {
             Inventory.milk = milk;
         } else {
             Inventory.milk = 0;
@@ -100,7 +100,7 @@ public class Inventory {
      * @param sugar the new quantity of sugar to set
      */
     public void setSugar(int sugar) {
-        if (sugar >= 0) {
+        if (sugar > -1) {
             Inventory.sugar = sugar;
         } else {
             Inventory.sugar = 0;

@@ -24,11 +24,7 @@ public class Recipe {
      * @param amtChocolate The amount of chocolate to set.
      */
     public void setAmtChocolate(int amtChocolate) {
-        if (amtChocolate >= 0) {
-            this.amtChocolate = amtChocolate;
-        } else {
-            this.amtChocolate = 0;
-        }
+        this.amtChocolate = Math.max(0, amtChocolate);
     }
 
     /**
@@ -47,11 +43,7 @@ public class Recipe {
      * @param amtCoffee The amount of coffee to set.
      */
     public void setAmtCoffee(int amtCoffee) {
-        if (amtCoffee >= 0) {
-            this.amtCoffee = amtCoffee;
-        } else {
-            this.amtCoffee = 0;
-        }
+        this.amtCoffee = Math.max(0, amtCoffee);
     }
 
     /**
@@ -70,11 +62,7 @@ public class Recipe {
      * @param amtMilk The amount of milk to set.
      */
     public void setAmtMilk(int amtMilk) {
-        if (amtMilk >= 0) {
-            this.amtMilk = amtMilk;
-        } else {
-            this.amtMilk = 0;
-        }
+        this.amtMilk = Math.max(0, amtMilk);
     }
 
     /**
@@ -93,11 +81,7 @@ public class Recipe {
      * @param amtSugar The amount of sugar to set.
      */
     public void setAmtSugar(int amtSugar) {
-        if (amtSugar >= 0) {
-            this.amtSugar = amtSugar;
-        } else {
-            this.amtSugar = 0;
-        }
+        this.amtSugar = Math.max(0, amtSugar);
     }
 
     /**
@@ -133,11 +117,7 @@ public class Recipe {
      * @param price The price to set.
      */
     public void setPrice(int price) {
-        if (price >= 0) {
-            this.price = price;
-        } else {
-            this.price = 0;
-        }
+        this.price = Math.max(0, price);
     }
 
     /**
